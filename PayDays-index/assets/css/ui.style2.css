@@ -1,0 +1,24 @@
+#wrap{
+    width: 100%;
+    min-width: 320px;
+    max-width: 767px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+body{background: #eee;}
+
+
+/* header */
+header{height: 88px;background-color: #fff;}
+header h1{float: left;padding-top: 50px;}
+header h1 img{width: 77px;height: 24px;}
+header nav{float: right;margin-top: 63px;}
+header nav{width: 18px;height: 2px;background-color: #000;position: relative;}
+header nav::before{content:'';width: 18px;height: 2px;background-color: #000;position: absolute;left: 0;top: 5px;}
+header nav::after{content:'';width: 18px;height: 2px;background-color: #000;position: absolute;left: 0;bottom: 5px;}
+
+/* account */
