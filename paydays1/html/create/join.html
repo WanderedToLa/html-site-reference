@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<title>회원가입 &lt; create &lt; html &lt; paydays</title>
+
+<!-- css -->
+<link rel="stylesheet" href="../../assets/css/ui.reset.css">
+<link rel="stylesheet" href="../../assets/css/ui.style.css">
+
+<!-- webFonts --> 
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <!-- AgreeSection -->
+        <section class="agree">
+            <article class="container">
+                <button><img src="../../assets/images/top-icon-close@3x.png" alt=""></button>
+                <p><strong>본인명의의 휴대폰</strong>으로<br>인증해주세요.</p>
+                <div class="allAgree">
+                    <div>
+                        <input type="checkbox" id="check_all">
+                        <label for="check_all"></label>
+                    </div>
+                    <span>[필수] 전체약관동의</span>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <input type="checkbox" id="c1" class="check">
+                            <label for="c1"></label>
+                        </div>
+                        <span>개인정보 약관 동의</span>
+                        <a href="#"><img src="../../assets/images/icon-flat-more-right-s@3x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="checkbox" id="c2" class="check">
+                            <label for="c2"></label>
+                        </div>
+                        <span>개인정보 약관 동의</span>
+                        <a href="#"><img src="../../assets/images/icon-flat-more-right-s@3x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="checkbox" id="c3" class="check">
+                            <label for="c3"></label>
+                        </div>
+                        <span>개인정보 약관 동의</span>
+                        <a href="#"><img src="../../assets/images/icon-flat-more-right-s@3x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <div>
+                            <input type="checkbox" id="c4" class="check">
+                            <label for="c4"></label>
+                        </div>
+                        <span>개인정보 약관 동의</span>
+                        <a href="#"><img src="../../assets/images/icon-flat-more-right-s@3x.png" alt=""></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- //AgreeSection -->
+
+        <!-- joinSave -->
+        <section class="joinSave">
+            <article class="container">
+                <fieldset>
+                    <legend>회원가입 입력</legend>
+                    <ul>
+                        <li class="name">
+                            <label for="youName">이름</label>
+                            <input type="text" name="youName" id="youName" maxlength="5" placeholder="이름 입력" autocomplete="off" required>
+                        </li>
+                        <li class="user">
+                            <ul>
+                                <li class="birth">
+                                    <label for="youBirth">생년월일</label>
+                                    <input type="text" name="youBirth" id="youBirth" maxlength="8" placeholder="예: 19810219" autocomplete="off" required>
+                                </li>
+                                <li class="jender">
+                                    <label for="youName">성별</label>
+                                    <div>
+                                        <span>
+                                            <input type="radio" name="radio" id="radio1" class="input-radio">
+                                            <label for="radio1" class="form-radio">남자</label>
+                                        </span>
+                                        <span>
+                                            <input type="radio" name="radio" id="radio2" class="input-radio">
+                                            <label for="radio2" class="form-radio">여자</label>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="agency">
+                            <label for="youAgency">통신사 선택</label>
+                            <input type="radio" id="youAgency">
+                            <ul class="agencyList">
+                                <li>
+                                    <input type="radio" id="a1">
+                                    <label for="a1" class="agencyTitle">SKT</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="a2">
+                                    <label for="a2" class="agencyTitle">KT</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="a3">
+                                    <label for="a3" class="agencyTitle">LG U+</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="a4">
+                                    <label for="a4" class="agencyTitle">알뜰폰</label>
+                                </li>
+                            </ul>
+                            <ul class="salePhone">
+                                <li>
+                                    <input type="radio" id="a5">
+                                    <label for="a5" class="sale">SKT 알뜰폰</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="a6">
+                                    <label for="a6" class="sale">KT 알뜰폰</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="a7">
+                                    <label for="a7" class="sale">LG U+ 알뜰폰</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="phoneNumber">
+                            <label for="youPhone">휴대폰번호</label>
+                            <input type="text" name="youPhone" id="youPhone" class="input-write" maxlength="11" placeholder="'-'없이 숫자만 입력" autocomplete="off" required>
+                        </li>
+                    </ul>
+                    <button type="submit">인증번호 발송</button>
+                </fieldset>
+            </article>
+        </section>
+        <!-- //joinSave -->
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 더보기 슬라이드 , 화살표
+        $(".agree .allAgree").click(function() {
+            $(".agree ul").stop().slideToggle(300);
+            $(this).toggleClass("down");
+        });
+
+        $(".agree .allAgree span").click(function(){
+                $(this).toggleClass("down");
+        });
+
+        // 통신사 선택 탭 메뉴
+        const tabBtn = $(".joinSave .agencyList li .agencyTitle")
+        const tabCont = $(".joinSave .agencyList li:last-child .agencyTitle")
+        const salePhone = $(".joinSave .salePhone li")
+        const saleAgency = $(".joinSave .salePhone li .sale")
+
+        tabBtn.click(function () {
+            let target = $(this);
+            tabBtn.removeClass("on");
+            target.addClass("on");
+        });
+
+        tabBtn.click(function(){
+            if(tabCont.hasClass("on")){
+                salePhone.css("display", "inline-block");
+            }else {
+                salePhone.css("display", "none");
+            }
+        })
+        
+        saleAgency.click(function(){
+            let target = $(this);
+            saleAgency.removeClass("on");
+            target.addClass("on");
+        })
+
+
+        // 모두 동의 버튼
+        $("#check_all").click(function(){
+            let checked = $(".check").prop("checked");
+
+            $(".check").prop("checked", this.checked);
+        });
+
+        // 하나 이상 해제했을때 , 모두동의 해제
+        $(".check").click("click", function() {
+            let checked = $(this).is(":checked");
+
+            if (!checked) {
+                $("#check_all").prop("checked", false);
+            }
+        });
+
+        // 해제 후, 모두 체크했을 때 모두동의 활성화
+        $(".check").click("click" , function(){
+            let is_checked = true;
+
+            $(".check").each(function(){
+                is_checked = is_checked && $(this).is(":checked");
+            });
+
+            $("#check_all").prop("checked", is_checked);
+        })
+    </script>
+</body>
+</html>
